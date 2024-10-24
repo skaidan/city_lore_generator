@@ -14,6 +14,7 @@ class PlaceHandler():
   greens:bool
   gates:bool
   hub:bool
+  sea:float
   
   def __init__(self, url:str):
     errors = []
@@ -27,10 +28,12 @@ class PlaceHandler():
       if parameter in url_without_base:
         parameter_url = (url_without_base+'.')[1]
         value = parameter_url.split(parameters[parameter])[1].split('&')[0]
+        if parameter is 'sea':
+          parameters[parameter] = float(value)
         if value is '1':
           parameters[parameter] = True
         else:
           parameters[parameter] = False
   
-  
+
     

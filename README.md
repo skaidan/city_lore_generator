@@ -23,7 +23,8 @@ https://watabou.github.io/city-generator/?size=46&seed=371766476&citadel=1&urban
 - river
 - greens
 - gates
-- hub
+- hub Bool
+- sea [-1,1]
 - ...
 
 
