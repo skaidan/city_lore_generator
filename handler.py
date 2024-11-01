@@ -24,7 +24,7 @@ class PlaceHandler():
     if url == url_without_base:
       errors.append(f"La url no contiene la base {URL_BASE}")
 
-    for parameter in parameters.keys:
+    for parameter in parameters.keys:  # TO-DO: Add tests with a bundle of links
       if parameter in url_without_base:
         parameter_url = (url_without_base+'.')[1]
         value = parameter_url.split(parameters[parameter])[1].split('&')[0]
