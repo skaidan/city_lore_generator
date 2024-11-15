@@ -10,6 +10,10 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+import os.path
+
+PROJECT_PATH = os.path.realpath(os.path.dirname(__file__))
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -68,7 +72,7 @@ TEMPLATES = [
 ]
 
 TEMPLATE_DIRS = [
-    os.path.join(PROJECT_PATH, 'templates/'),
+   BASE_DIR / 'templates/',
 ]
 
 WSGI_APPLICATION = 'citylore.wsgi.application'
