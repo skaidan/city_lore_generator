@@ -7,7 +7,7 @@ from pathlib import Path
 
 
 class AboutView(TemplateView):
-    template_name = "./lore/about.html"
+    template_name = "./citylore/lore/about.html"
 
 class HelloView(View):
     def get(self, request, *args, **kwargs):
