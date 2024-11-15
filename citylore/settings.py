@@ -54,7 +54,12 @@ ROOT_URLCONF = 'citylore.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            "/home/skaidan/citylore/templates/",
+            "./citylore/templates/",
+            "./templates/",
+            "/",
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
