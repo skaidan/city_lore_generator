@@ -12,5 +12,5 @@ class AboutView(TemplateView):
 class HelloView(View):
     def get(self, request, *args, **kwargs):
         BASE_DIR = Path(__file__).resolve().parent.parent
-        return HttpResponse("Hello world!" / BASE_DIR / 'templates/')
+        return HttpResponse("Hello world!")
 
