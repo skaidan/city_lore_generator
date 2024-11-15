@@ -4,12 +4,13 @@ from django.views.generic import TemplateView
 
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+
 
 class AboutView(TemplateView):
     template_name = "about.html"
 
 class HelloView(View):
     def get(self, request, *args, **kwargs):
+        BASE_DIR = Path(__file__).resolve().parent.parent
         return HttpResponse("Hello world!" / BASE_DIR / 'templates/')
 
