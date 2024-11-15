@@ -7,5 +7,5 @@ class AboutView(TemplateView):
 
 class HelloView(View):
     def get(self, request, *args, **kwargs):
-        return HttpResponse("Hello world!")
+        return HttpResponse("Hello world!" / BASE_DIR / 'templates/')
 
