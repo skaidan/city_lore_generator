@@ -23,4 +23,6 @@ urlpatterns = [
     path('about', AboutView.as_view()),
     path('city_url', CityURL.as_view()),
     path('/', HelloView.as_view()),
+    path('', HelloView.as_view()),
+    path('.', HelloView.as_view()),
 ]
